@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
   <header class="header py-5 encabezado">
     <div class="container">
@@ -22,8 +22,7 @@
         </div>
         <div class="col-12 col-md-8">
           <nav class="navbar navbar-expand-md navbar-light justify-content-center">
-            <button class="navbar-toggler mb-4" data-toggle="collapse" data-target="#nav_principal"
-              aria-expanded="false" type="button">
+            <button class="navbar-toggler mb-4" data-toggle="collapse" data-target="#nav_principal" aria-expanded="false" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
 
