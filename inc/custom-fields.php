@@ -82,3 +82,8 @@ function edc_campos_homepage()
     'type' => 'file',
   ));
 }
+
+
+/**
+ * Nosotros
+ */
