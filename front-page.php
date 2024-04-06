@@ -34,28 +34,13 @@
 </div>
 <!--.container-fluid-->
 
-<div class="container">
-  <section class="nosotros mt-5">
-    <h2 class="separador text-center mb-5">¿Porqué estudiar con nosotros?</h2>
-    <div class="row">
-      <div class="col-md-4 text-center informacion">
-        <img src="img/icono_chef.png" alt="Icon-Chef" class="img-fluid mb-3" />
-        <h3>Chef’s Especialistas</h3>
-        <p>Los mejores chef’s que han trabajado en los mejores restaurants de Europa</p>
-      </div>
-      <div class="col-md-4 text-center informacion">
-        <img src="img/icono_vino.png" alt="Icon-Vino" class="img-fluid mb-3" />
-        <h3>Incluye todo sobre Bebidas</h3>
-        <p>Además de la cocina, incluimos en el programa todo lo relacionado a bebidas.</p>
-      </div>
-      <div class="col-md-4 text-center informacion">
-        <img src="img/icono_menu.png" alt="Icon-Menu" class="img-fluid mb-3" />
-        <h3>Siempre Actualizado</h3>
-        <p>El Programa se actualiza constamemente con nuevos platillos y técnicas.</p>
-      </div>
-    </div>
-  </section>
-</div>
+<?php 
+    $nosotros = new WP_Query('pagename=nosotros');
+    while($nosotros->have_posts() ): $nosotros->the_post();
+      get_template_part('template', 'parts/iconos');
+    endwhile; wp_reset_postdata();
+  ?>
+
 <!--.container-->
 
 <section class="clases mt-5 py-5">
