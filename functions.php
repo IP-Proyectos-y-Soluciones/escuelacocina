@@ -34,7 +34,7 @@ require_once dirname(__FILE__) . '/inc/custom-fields.php';
 /*
  * Opciones del Theme
  */
-// require_once dirname(__FILE__) . '/inc/opciones.php';
+require_once dirname(__FILE__) . '/inc/opciones.php';
 
 
 /*
