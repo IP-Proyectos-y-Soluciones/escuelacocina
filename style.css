@@ -40,6 +40,9 @@ body.home .clases {
 		height: 45rem;
 	}
 }
+.card-img-top {
+	height: auto;
+}
 .bg-primary,
 .alert-primary,
 .list-group-item-primary {
@@ -53,16 +56,6 @@ body.home .clases {
 .imagen-fondo{
 	background-size: cover;
 	background-position: top center;
-}
-/* .bg-vino {
-	background-image: url(../img/principal1.jpg);
-	background-size: cover;
-	background-position: top center;
-}
-.bg-comida {
-	background-image: url(../img/principal2.jpg);
-	background-size: cover;
-	background-position: top center; */
 }
 .imagen-superior .contenido {
 	border-top: 1px solid white;
@@ -297,7 +290,17 @@ aside .card-footer {
 aside .card-footer a {
 	color: black;
 }
-
+/** Cursos **/
+.card {
+    margin-bottom: 2rem;
+}
+.card-title {
+    font-weight: 400;
+}
+.card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+}
 /* Clases */
 .instructor {
 	font-size: 1.8rem;
