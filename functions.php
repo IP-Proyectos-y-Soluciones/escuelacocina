@@ -2,6 +2,12 @@
 
 
 /*
+* Crea un Widget con los próximos Cursos
+*/
+require_once dirname(__FILE__) . '/inc/widgets.php';
+
+
+/*
 * Agrega los Post Types de Instructores y Clases
 */
 require_once dirname(__FILE__) . '/inc/posttypes.php';
@@ -23,6 +29,12 @@ require_once dirname(__FILE__) . '/inc/queries.php';
  * Carga campos personalizados
  */
 require_once dirname(__FILE__) . '/inc/custom-fields.php';
+
+
+/*
+ * Opciones del Theme
+ */
+// require_once dirname(__FILE__) . '/inc/opciones.php';
 
 
 /*
@@ -118,4 +130,19 @@ function edc_cambiar_estado($states, $post)
     $states[] = __('Página de Clases <a href="edit.php?post_type=clases_cocina">Administrar Clases</a> ');
   }
   return $states;
+}
+
+
+/** Soporte a widgets */
+add_action('widgets_init', 'edc_widgets_sidebar');
+function edc_widgets_sidebar()
+{
+  register_sidebar(array(
+    'name'         => 'Widget Lateral',
+    'id'           => 'sidebar_widget',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="text-center text-light separador inverso">',
+    'after_title' => '</h2>'
+  ));
 }
