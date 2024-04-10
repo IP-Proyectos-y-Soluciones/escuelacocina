@@ -40,6 +40,10 @@ body.home .clases {
 		height: 45rem;
 	}
 }
+.wpcf7-form-control-wrap,
+.form-group label{
+    width: 100%;
+}
 .card-img-top {
 	height: auto;
 }
